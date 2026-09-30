@@ -1,0 +1,3 @@
+[INFO] Generating model registry report...
+[INFO] Report saved to: C:\Users\vamsi\OneDrive\Desktop\OneDrive\Documents\mlops\18320\youtube-category-prediction\model_registry\registry_report.json
+[SUCCESS] Registry report generated!

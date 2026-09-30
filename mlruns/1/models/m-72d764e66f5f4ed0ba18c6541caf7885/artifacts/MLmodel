@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/vamsi/OneDrive/Desktop/OneDrive/Documents/mlops/18320/youtube-category-prediction/mlruns/1/models/m-72d764e66f5f4ed0ba18c6541caf7885/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+mlflow_version: 3.16.1
+model_id: m-72d764e66f5f4ed0ba18c6541caf7885
+model_size_bytes: 3382
+model_uuid: m-72d764e66f5f4ed0ba18c6541caf7885
+prompts: null
+run_id: 5087002329ae4f319df1c224370b5add
+utc_time_created: '2026-09-30 01:17:34.531558'

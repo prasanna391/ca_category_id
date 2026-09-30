@@ -1,0 +1,9 @@
+{
+    "model_name": "youtube_category_model",
+    "version": "v1",
+    "dataset": "CA_category_id.csv",
+    "target": "assignable",
+    "feature": "title",
+    "accuracy": 0.2857142857142857,
+    "rows": 31
+}

@@ -1,0 +1,4 @@
+[INFO] Validating processed output...
+[INFO] Output rows: 31
+[INFO] Output columns: ['id', 'channelId', 'title', 'assignable']
+[SUCCESS] Output validation passed!

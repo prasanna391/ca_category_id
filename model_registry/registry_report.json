@@ -1,0 +1,9 @@
+{
+    "project": "YouTube Category Prediction",
+    "dataset": "CA_category_id.csv",
+    "model_name": "youtube_category_model",
+    "champion_version": "v1",
+    "accuracy": 0.2857142857142857,
+    "status": "Champion",
+    "deployment_ready": true
+}

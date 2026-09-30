@@ -1,0 +1,15 @@
+import joblib
+from sklearn.linear_model import LogisticRegression
+
+# Example training data
+X = [[1, 2], [2, 3], [3, 4], [4, 5]]
+y = [0, 0, 1, 1]
+
+# Train model
+model = LogisticRegression()
+model.fit(X, y)
+
+# Save model as .pkl
+joblib.dump(model, "models/my_model.pkl")
+
+print("Model saved successfully!")
