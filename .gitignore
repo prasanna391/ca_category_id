@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment files
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Model files
+models/*.pkl
+models/*.joblib
+model_registry/*.pkl
+
+# Model registry metadata
+model_registry/*.json
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+
+# Processed data
+data/processed/*
+!data/processed/.gitkeep
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
