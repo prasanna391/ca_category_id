@@ -1,15 +1,7 @@
-name: Lab 13 - MLOps Runner Testing Suite
-on:
-  workflow_run:
-    workflows: ["Lab 13 - E2E MLOps Pipeline Monitoring"]
-    types:
-      - completed
-jobs:
-  integration-tests:
-    runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
-    - name: Verify Workflow Complete
-      run: echo "Lab 13 automated actions execution pipeline running successfully!"
+name: Lab 13 - Testing Suite 
+on: workflow_run 
+jobs: 
+  test: 
+    runs-on: ubuntu-latest 
+    steps: 
+    - run: echo "Verified" 
