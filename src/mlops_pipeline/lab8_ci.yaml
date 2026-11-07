@@ -1,0 +1,8 @@
+name: MLOps CI Quality Pipeline
+pipeline_stages:
+  - stage: Linting
+    command: flake8 src/
+  - stage: Data Validation
+    command: python src/mlops_pipeline/07_quality_gate.py --input data/CA_category_id.csv
+  - stage: Model Check
+    command: python pipelines/pipelines/run_lab3_baseline.py
