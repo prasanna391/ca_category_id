@@ -1,35 +1,24 @@
 name: Lab 13 - E2E MLOps Pipeline Monitoring
-
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
-
+    branches: [ master ]
 jobs:
   mlops-monitoring:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository Code
+    - name: Checkout Code
       uses: actions/checkout@v4
-
-    - name: Set up Python Environment
+    - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.12'
-        cache: 'pip'
-
-    - name: Install Runtime Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pandas numpy scipy scikit-learn
-
-    - name: Run Data Evolution Lab
+    - name: Install Dependencies
+      run: pip install pandas numpy scipy
+    - name: Run Evolved Data Generation
       run: python src/mlops_pipeline/12_create_evolved_dataset.py
-
-    - name: Run Live API Metrics Performance Log
+    - name: Run API Performance Metrics
       run: python src/mlops_pipeline/12_api_performance_monitoring.py
-
-    - name: Execute Drift Check and Automated Retraining Orchestrator
+    - name: Run Performance Drift Orchestrator
       run: python src/mlops_pipeline/12_monitor_trigger.py
